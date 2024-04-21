@@ -153,6 +153,7 @@ ul {
 /* ---- hero ---- */
 
 .hero {
+  max-width: 1440px;
   padding: 188px 0;
 
   background-color: var(--navy-blue);
@@ -359,6 +360,11 @@ ul {
   padding: 32px 16px;
 } */
 
+.item-block {
+  position: relative;
+  overflow: hidden;
+}
+
 .portfolio-title {
   margin-bottom: 72px;
 
@@ -388,6 +394,10 @@ ul {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
+.portfolio-item:hover .portfolio-info {
+  transform: translateY(-100%);
+}
+
 .portfolio-work {
   padding: 32px 16px;
 
@@ -413,6 +423,18 @@ ul {
   letter-spacing: 0.02em;
 
   color: var(--slate);
+}
+
+.portfolio-info {
+  height: 100%;
+  padding: 40px 32px;
+  background-color: var(--iris);
+  position: absolute;
+  transition: transform 0.5s linear;
+
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
 }
 
 /* footer */

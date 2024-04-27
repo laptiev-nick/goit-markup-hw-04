@@ -354,9 +354,10 @@ ul {
   background-color: #404bbf;
 }
 
-.item-socials-link .socials-link-icon {
+.socials-link-icon {
   height: 16px;
   width: 16px;
+  fill: var(--cloud);
 }
 
 .item-person {
